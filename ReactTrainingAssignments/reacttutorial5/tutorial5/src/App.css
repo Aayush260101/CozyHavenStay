@@ -1,0 +1,34 @@
+/* Styling for the main container */
+.div1 {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  margin: 20px auto; /* Center the div */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 500px; /* Restrict the width */
+  text-align: center; /* Center align text */
+}
+
+/* Styling for headings inside the div */
+.div1 h1 {
+  font-family: Arial, sans-serif; /* Clean font */
+  font-size: 18px;
+  color: #333; /* Dark text color */
+  margin: 10px 0; /* Space between headings */
+}
+
+/* Highlight TotalSalary for emphasis */
+.div1 h1:last-child {
+  color: #007bff; /* Blue text */
+  font-weight: bold;
+  font-size: 20px; /* Slightly larger font */
+}
+
+/* Add some responsiveness */
+@media (max-width: 600px) {
+  .div1 {
+    padding: 15px;
+    font-size: 16px;
+  }
+}

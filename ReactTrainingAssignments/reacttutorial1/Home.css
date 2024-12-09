@@ -1,0 +1,13 @@
+.div1{
+    border :2px solid red;
+    width: 300 px;
+    margin:150 px;
+    color: red;
+    background-color: pink;
+}
+
+button{
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}

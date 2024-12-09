@@ -1,0 +1,87 @@
+/* Wrapper for all cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to a new row if there isn't enough space */
+  justify-content: space-around; /* Distributes cards evenly with space around */
+  gap: 20px; /* Adds spacing between cards */
+  padding: 20px;
+  margin: 0 auto; /* Center the container horizontally */
+  
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Individual card styling */
+.card {
+  width: 600px; /* Fixed width for each card */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content within the card */
+.card-content {
+  padding: 15px;
+}
+
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Action buttons */
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card button:focus {
+  outline: none;
+}
+
+.card button:nth-child(1) {
+  background-color: #e63946;
+}
+
+.card button:nth-child(1):hover {
+  background-color: #c12533;
+}
