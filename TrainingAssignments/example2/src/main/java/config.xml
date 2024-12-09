@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+<bean id="empobj" class="example.example2.Student">
+<property name="name" value="Aayush"/>
+<property name="sid" value="101"/>
+<property name="marks" value="85"/>
+</bean>
+
+<bean id="empobj1" class="example.example2.Student">
+<property name="name" value="Aman"/>
+<property name="sid" value="102"/>
+<property name="marks" value="90"/>
+</bean>
+ 
+ 
+ 
+</beans>
